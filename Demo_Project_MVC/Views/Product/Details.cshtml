@@ -1,0 +1,52 @@
+﻿@model Demo_Project_MVC.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    .btn {
+        background-color: grey;
+        color: white;
+    }
+
+    .dl-horizontal dt {
+        color: white;
+    }
+
+    .dl-horizontal dd {
+        color: white;
+    }
+</style>
+
+<h2>Details</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PQunt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PQunt)
+        </dd>
+    </dl>
+</div>
+
+<p>
+    @Html.ActionLink("Edit", "UpdateProduct", "Product", new { id = Model.Id }, new { @class = "btn btn-success" }) |
+    @Html.ActionLink("Cancel", "DisplayProduct", "Product", null, new { @class = "btn btn-danger" })
+</p>

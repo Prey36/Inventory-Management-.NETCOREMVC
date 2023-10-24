@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    .jumbotron {
+        background-color: grey;
+        text-align: center;
+    }
+
+        .jumbotron h1 {
+            color: white;
+        }
+
+    .row {
+        margin-top: 20px;
+    }
+
+    .col-md-4 {
+        background-color: grey;
+        color: white;
+        border: 1px solid black;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+        .col-md-4 h2 {
+            color: white;
+        }
+
+    .btn-primary,
+    .btn-danger,
+    .btn-success {
+        background-color: black;
+        border: 1px solid white;
+        color: white;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+</style>
+
+<div class="jumbotron">
+    <div>
+        <h1>Inventory Management</h1>
+        
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Products Details</h2>
+        <p>
+            Get product details, view and delete products from the inventory. See the list of available products and their quantities.
+        </p>
+        <p><a class="btn btn-primary" href="https://localhost:44371/Product/DisplayProduct">Products &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Sale Details</h2>
+        <p>View sales details, track product sales, and manage stock. See the list of products sold by the company.</p>
+        <p><a class="btn btn-danger" href="https://localhost:44371/Sold/DisplaySold">Sales &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Purchase Details</h2>
+        <p>View product purchase details, manage product inventory, and track purchases. See the list of products purchased by the company.</p>
+        <p><a class="btn btn-success" href="https://localhost:44371/Bought/DisplayBought">Purchase &raquo;</a></p>
+    </div>
+</div>
