@@ -10,3 +10,6 @@ It is a simple Inventory Management System built using .NET MVC Core. It has sim
     - `Add-Migrations init`
     - `Update-Database`
 - Run the Project
+
+
+[Video Link](https://drive.google.com/file/d/1ckaaaCsd98HEGEyFrqM7Q3XK9qb8pQw3/view?usp=drive_link)
